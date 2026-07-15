@@ -33,7 +33,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Podcast Speaker Timestamp Generator" },
+      { title: "Podcast to SRT by ALI" },
       {
         name: "description",
         content:

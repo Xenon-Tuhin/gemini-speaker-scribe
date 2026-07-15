@@ -77,19 +77,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Podcast Speaker Timestamp Generator" },
+      { title: "Podcast to SRT by ALI" },
       {
         name: "description",
         content:
           "Upload a podcast and get a speaker-labeled transcript with timestamps powered by Gemini. Export JSON, CSV, TXT, or SRT.",
       },
-      { property: "og:title", content: "Podcast Speaker Timestamp Generator" },
+      { property: "og:title", content: "Podcast to SRT by ALI" },
       {
         property: "og:description",
-        content: "Gemini-powered speaker diarization and timestamped transcripts, in your browser.",
+        content: "Upload a podcast and get a speaker-labeled transcript with timestamps powered by Gemini. Export JSON, CSV, TXT, or SRT.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Podcast to SRT by ALI" },
+      { name: "twitter:description", content: "Upload a podcast and get a speaker-labeled transcript with timestamps powered by Gemini. Export JSON, CSV, TXT, or SRT." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/282e5bcf-c64b-4970-bf03-f7e21a286997/id-preview-8321e63a--27b9b414-374c-43e0-b629-b3a29ad4d3e3.lovable.app-1784106568471.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/282e5bcf-c64b-4970-bf03-f7e21a286997/id-preview-8321e63a--27b9b414-374c-43e0-b629-b3a29ad4d3e3.lovable.app-1784106568471.png" },
     ],
     links: [
       {
