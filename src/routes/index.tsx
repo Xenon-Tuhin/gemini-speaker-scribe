@@ -260,7 +260,7 @@ function Page() {
       <AppBar position="static" color="transparent" elevation={0} sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Toolbar>
           <GraphicEqIcon sx={{ mr: 1, color: "primary.main" }} />
-          <Typography variant="h6" fontWeight={700} sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" sx={{ fontWeight: 700, flexGrow: 1 }}>
             Podcast Speaker Timestamps
           </Typography>
           <Chip label="Gemini" size="small" color="primary" variant="outlined" />
@@ -270,7 +270,7 @@ function Page() {
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Stack spacing={3}>
           <Paper sx={{ p: 3 }}>
-            <Stack direction={{ xs: "column", md: "row" }} spacing={2}>
+            <Stack direction={{ xs: "column", md: "row" }} spacing={2} sx={{}}>
               <TextField
                 fullWidth
                 label="Gemini API Key"
@@ -278,7 +278,7 @@ function Page() {
                 value={apiKey}
                 onChange={(e) => saveKey(e.target.value)}
                 helperText="Stored only in your browser (localStorage)."
-                InputProps={{ startAdornment: <KeyIcon sx={{ mr: 1, opacity: 0.6 }} /> }}
+                slotProps={{ input: { startAdornment: <KeyIcon sx={{ mr: 1, opacity: 0.6 }} /> } }}
               />
               <TextField
                 select
@@ -331,9 +331,9 @@ function Page() {
           </Paper>
 
           <Paper sx={{ p: 3 }}>
-            <Stack direction="row" alignItems="center" spacing={1} sx={{ mb: 1 }}>
+            <Stack direction="row" spacing={1} sx={{ mb: 1, alignItems: "center" }}>
               <DescriptionIcon fontSize="small" />
-              <Typography variant="subtitle1" fontWeight={600}>
+              <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
                 Optional transcript / script
               </Typography>
             </Stack>
@@ -348,7 +348,7 @@ function Page() {
             />
           </Paper>
 
-          <Stack direction="row" spacing={2} alignItems="center">
+          <Stack direction="row" spacing={2} sx={{ alignItems: "center" }}>
             <Button
               variant="contained"
               size="large"
@@ -381,7 +381,7 @@ function Page() {
 
           {segments.length > 0 && (
             <Paper sx={{ p: 3 }}>
-              <Stack direction="row" alignItems="center" spacing={1} sx={{ mb: 2 }}>
+              <Stack direction="row" spacing={1} sx={{ mb: 2, alignItems: "center" }}>
                 <Typography variant="h6" sx={{ flexGrow: 1 }}>
                   Dialogue Timeline
                 </Typography>
