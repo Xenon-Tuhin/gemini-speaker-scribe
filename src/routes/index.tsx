@@ -63,6 +63,7 @@ const theme = createTheme({
 });
 
 const MODELS = [
+  { id: "gemini-3.8-flash", label: "Gemini 3.8 Flash (recommended)" },
   { id: "gemini-3.1-pro-preview", label: "Gemini 3.1 Pro (higher quality)" },
   { id: "gemini-3.5-flash", label: "Gemini 3.5 Flash (faster)" },
   { id: "gemini-2.5-pro", label: "Gemini 2.5 Pro (fallback)" },
